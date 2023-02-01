@@ -14,7 +14,7 @@ body {
   padding: 0;
   width: 100%;
   height: auto;
-  background-image: url("tinywow_sandro-katalina-k1bO_VTiZSs-unsplash_12707200.jpg");
+  background-image: url("bg-img.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .nav-link{
-  font-size: clamp(0.2rem, 5vw, 1rem); 
+  font-size: clamp(0.2rem, 5vw, 1.2rem); 
 }
 
 /* Color of the links BEFORE scroll */
@@ -80,7 +80,7 @@ body {
 }
 
 /* WELCOME */
-#welcome-section {
+#home {
   display: flex;
   width: 100%;
   height: 100vh;
@@ -96,7 +96,7 @@ body {
   overflow-x: hidden;
 }
 
-#welcome-section h1 {
+#home h1 {
   font-size: clamp(1rem, 10vw, 7rem);
   color: white;
   margin-bottom: 0;
@@ -106,19 +106,8 @@ body {
   
 }
 
-#welcome-section h2 {
+#home h2 {
   font-size: clamp(0.5rem, 5vw, 3rem);
   color: white;
   /* text-shadow: 0 0 0.2em grey, 0 0 0.1em grey; */
-}
-
-
-/* MISCELLANEOUS */
-/* .special-text { */
-/* text-shadow: 1px 1px 8px #ffffff; */
-/* text-shadow: 1px 1px 2px #f5ab0a, 0 0 1em #0f406e, 0 0 0.2em #0f406e; */
-/* } */
-
-/* MEDIA QUERIES */
-@media (max-width: 991.98px) {
 }

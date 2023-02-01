@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tester</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <!-- MDB -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+      integrity="sha512-nzSGtgaJWS79WO+bCKLhowPkjbM+WI18/K4T77XPB4QPMybSKLozMFzDNPEHcWxN1dOx1gvYGKP39nXLNNZ8qg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Custom styles -->
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div id="overlay">
+      <!-- HEADER -->
+      <header>
+        <!-- Navbar -->
+        <nav
+          id="main-navbar"
+          class="navbar navbar-expand-md fixed-top navbar-before-scroll shadow-0 me-auto"
+        >
+          <!-- Container wrapper -->
+          <div class="container-fluid">
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+              <img
+                src="" 
+                height="30"
+                alt="Fest"
+                loading="lazy"
+                style="color: white"
+              />
+              <!-- Change the image to Syntaxia's logo, colour is temp -->
+            </a>
+            <!-- Toggle button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="navbar-btn"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Left links -->
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Registration</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Brochure</a>
+                </li>
+              </ul>
+              <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+          </div>
+          <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+      </header>
+
+      <!-- MAIN -->
+      <main>
+        <!-- Home -->
+        <section id="home">
+          <h1>SYNTA}{IA</h1>
+            <h2>2023</h2>
+        </section>
+      </main>
+    </div>
+
+    <!-- MDB -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+      integrity="sha512-oFBfx20Vuw8reYrngBlvcrgBmDcEAPE0Vv7Rb9b7JYZNHmDFdxZhiOTGm0CePa7ouSwfty9qwHQck1aVGWK5tA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+      const navbar = document.getElementById("main-navbar");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("navbar-after-scroll");
+        } else {
+          navbar.classList.remove("navbar-after-scroll");
+        }
+      });
+    </script>
+  </body>
+</html>
