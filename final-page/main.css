@@ -1,0 +1,124 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: valorax;
+  src: url("Valorax-lg25V.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-image: url("tinywow_sandro-katalina-k1bO_VTiZSs-unsplash_12707200.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.425);
+}
+
+/* NAVBAR */
+.navbar {
+  font-family: valorax;
+  text-shadow: 1px 1px 5px #170247, 0 0 0.25em #986EF8;
+}
+
+.nav-link{
+  font-size: clamp(0.2rem, 5vw, 1rem); 
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-before-scroll .nav-link,
+.navbar-before-scroll .navbar-toggler-icon {
+  color: rgb(255, 255, 255);
+}
+
+/* MDB */
+/* Color of the links AFTER scroll */
+.navbar-after-scroll .nav-link,
+.navbar-after-scroll .navbar-toggler-icon {
+  /* color: #4f4f4f; */
+  color: #ffffff;
+}
+/* Color of the navbar AFTER scroll */
+.navbar-after-scroll {
+  background-color: transparent;
+}
+
+/* Transition after scrolling */
+.navbar-after-scroll {
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* Transition to the initial state */
+.navbar-before-scroll {
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* Navbar on mobile */
+@media (max-width: 991.98px) {
+  #main-navbar {
+    background-color: #010118;
+  }
+
+  .nav-link,
+  .navbar-toggler-icon,
+  #navbar-btn {
+    color: #ffffff !important;
+  }
+}
+
+.nav-link:hover {
+  text-shadow: 1px 1px 7px #986EF8, 0 0 0.3em #986EF8, 0 0 0.2em #986EF8;
+  /* text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986EF8, 0 0 0.5em #8336BA; */
+}
+
+/* WELCOME */
+#welcome-section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  margin: 0;
+  font-family: valorax;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986EF8, 0 0 0.5em #8336BA;
+  /* text-shadow: 1px 1px 5px grey, 0 0 0.3em white, 0 0 0.2em grey; */
+  overflow-x: hidden;
+}
+
+#welcome-section h1 {
+  font-size: clamp(1rem, 10vw, 7rem);
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  justify-content: center;
+  white-space: nowrap;
+  
+}
+
+#welcome-section h2 {
+  font-size: clamp(0.5rem, 5vw, 3rem);
+  color: white;
+  /* text-shadow: 0 0 0.2em grey, 0 0 0.1em grey; */
+}
+
+
+/* MISCELLANEOUS */
+/* .special-text { */
+/* text-shadow: 1px 1px 8px #ffffff; */
+/* text-shadow: 1px 1px 2px #f5ab0a, 0 0 1em #0f406e, 0 0 0.2em #0f406e; */
+/* } */
+
+/* MEDIA QUERIES */
+@media (max-width: 991.98px) {
+}
