@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --light-blue: lightblue;
+    --color-blue: blue;
+    --color-dark-grey: #222831;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+
+/*Timeline section*/
+img {
+    width: 100%;
+}
+
+.timeline-section {
+    width: 100%;
+    overflow: hidden;  
+}
+
+.timeline-section ul {
+    background: black;
+    padding: 5rem 0;
+}
+
+/*list styles*/
+.timeline-section ul li {
+    list-style: none;
+    position: relative;
+    width: 1.5px;
+    margin: 0 auto; 
+    padding-top: 5rem; 
+    background: white;
+}
+
+
+/*Nodes on line*/
+.timeline-section ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: black;
+    border: 0.2rem solid white;
+}
+
+
+/* Content box */
+.timeline-section ul li div {
+    width: 40rem;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    bottom: 0;
+    padding: 1.5rem;
+    background: rgba(255,255,255,.2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Pushes the divs at odd number position to the right */
+.timeline-section ul li:nth-child(odd) div {
+    left: 45px;  
+}
+  
+ 
+/* this style pushes the divs at odd number position to the left */
+.timeline-section ul li:nth-child(even) div {
+    left: -439px;
+}
+  
+
+.event-heading {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 7px;
+    color: white;
+}
+
+.event-tagline{
+    color:rgb(116, 114, 114);
+}
+
+.timeline-section ul li::after {
+    transition: all 1.1s ease-in-out;
+}  
+
+.timeline-section ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1.1s ease-in-out;
+}
+  
+.timeline-section ul li:nth-child(odd) div {
+    transform: translateX(20rem);
+}
+
+.timeline-section ul li:nth-child(even) div {
+    transform: translateX(-20rem);
+}
+
+.timeline-section ul li.slide-in div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+    color: grey;
+    background-color: black;
+    border: none;
+}
+
+
+/* Tablet Width */
+@media screen and (max-width: 900px) {
+    .timeline-section ul li div {
+      width: 25rem;
+   }
+
+.timeline-section ul li:nth-child(even) div {
+      left: -289px;
+    }
+}
+
+/* Mobile width */
+@media screen and (max-width: 600px) {
+    .timeline-section ul li {
+      margin-left: 2rem;
+    }
+  
+    .timeline-section ul li div {
+      width: calc(100vw - 91px);
+    }
+  
+    .timeline-section ul li:nth-child(even) div {
+      left: 45px;
+    }
+  
+    .timeline-section ul li:nth-child(even) div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent var(--light-blue) transparent transparent;
+    }
+}
+
