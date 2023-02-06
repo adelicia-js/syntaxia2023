@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tester</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -16,6 +16,11 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <!-- MDB -->
     <!-- MDB -->
     <link
@@ -26,11 +31,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="timeline.css" />
     <!-- Custom styles -->
-    <style>
-      
-    </style>
+    <style></style>
     <script src="timeline.js"></script>
   </head>
   <body>
@@ -46,7 +49,7 @@
           <div class="container-fluid">
             <a class="navbar-brand mt-2 mt-lg-0" href="#">
               <img
-                src="" 
+                src=""
                 height="30"
                 alt="Fest"
                 loading="lazy"
@@ -73,16 +76,16 @@
               <!-- Left links -->
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="#home">Home</a>
+                  <a class="nav-link" href="#home-section">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Events</a>
+                  <a class="nav-link" href="#events-section">Events</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Registration</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="#contact-section">Contact Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Brochure</a>
@@ -100,95 +103,192 @@
       <!-- MAIN -->
       <main>
         <!-- Home -->
-        <section id="home">
+        <section id="home-section">
           <h1>SYNTA}{IA</h1>
-            <h2>2023</h2>
+          <h2>2023</h2>
         </section>
 
         <!--Events-->
-        <section class="timeline-section">
+        <section id="events-section" class="timeline-section">
           <!--Put all that should be in the timeline inside a ul tag-->
           <!--Each li is an event-->
-          <uL>
-              <li>
-                  <div>
-                      <!--Event heading-->
-                    <h3 class="event-heading">Code Wars</h3>
-                    <!--Event tagline/description-->
-                    <p class="event-tagline">A group coding and debugging event where the participants are
-                       given challenging problems and are judged by their abilities to write efficient, error 
-                       free and well documented code.</p>
-                  </div>
-              </li>
-                
-              <li>
-                <div>
-                  <h3 class="event-heading">BrainWave Byte</h3>
-                  <p class="event-tagline">A group event where the participants are tested on their 
-                      knowledge on a wide range of topics from computer hardware to cloud architectures, 
-                      with various rounds like buzzer rounds, rapid fire and so on.
-                  </p>
-                </div> 
-              </li>
-        
-              <li>
-                  <div>
-                      <h3 class="event-heading">Visionary Voice</h3>
-                      <p class="event-tagline">This event is an opportunity for students to showcase their knowledge and share their thoughts on the latest trends and advancements in the field of IT. It's a platform for students to learn and grow by listening to the experiences and ideas of their peers.
-                          Rules: The teams will have 15 minutes for presentations, followed by a question-and-answer session, The time limit should be strictly followed, and extension may lead to deduction of marks, Decision of the judges will be final.
-                      </p>   
-                  </div>
-              </li>
+          <ul>
+          <h2>Event Timeline</h2>
+            <li>
+              <div>
+                <!--Event heading-->
+                <h3 class="event-heading">Code Wars</h3>
+                <!--Event tagline/description-->
+                <p class="event-tagline">
+                  A coding and debugging event
+                </p>
+              </div>
+            </li>
 
-              <li>
-                  <div>
-                      <h3 class="event-heading">Project Prodigy</h3>
-                      <p class="event-tagline">This event is an opportunity for IT students to showcase 
-                          their ability to plan, organize, and execute a project from start to finish. 
-                          Participants will display their ability to manage time, resources and handle
-                           stress during this event.</p>
-                  </div>
-              </li>
+            <li>
+              <div>
+                <h3 class="event-heading">BrainWave Byte</h3>
+                <p class="event-tagline">
+                  A quiz
+                </p>
+              </div>
+            </li>
 
-              <li>
-                  <div>
-                      <h3 class="event-heading">TopNotch Design </h3>
-                      <p class="event-tagline">This competition is an opportunity for students to demonstrate their ability to create visually
-                           appealing and user-friendly interfaces using CSS. Participants will be given a design brief and will be
-                            judged on their ability to create a responsive and visually appealing layout, use of CSS effects and features
-                             and their attention to detail.</p>
-                  </div>
-              </li>
+            <li>
+              <div>
+                <h3 class="event-heading">Visionary Voice</h3>
+                <p class="event-tagline">
+                  Present your ideas
+                </p>
+              </div>
+            </li>
 
-              <li>
-                  <div>
-                      <h3 class="event-heading">Tech-Tangle</h3>
-                      <p class="event-tagline">This event is a potpourri of fun activities all related to IT.
-                           With a mix of serious and light-hearted activities, it's an opportunity for students 
-                           to showcase their tech skills in a fun and relaxed atmosphere. It's a great way to bond
-                            with your peers and learn something new in the process. </p>
-                  </div>
-              </li>
+            <li>
+              <div>
+                <h3 class="event-heading">Project Prodigy</h3>
+                <p class="event-tagline">
+                  IT manager
+                </p>
+              </div>
+            </li>
 
-              <li>
-                  <div>
-                      <h3 class="event-heading">Game on!</h3>
-                      <p class="event-tagline">Show us your skills in the game of BGMI </p>
-                  </div>
-              </li>
+            <li>
+              <div>
+                <h3 class="event-heading">TopNotch Design</h3>
+                <p class="event-tagline">
+                  Design yay
+                </p>
+              </div>
+            </li>
 
-              <li>
-                  <div>
-                      <h3 class="event-heading">WereWolves within </h3>
-                      <p class="event-tagline">It is fun and exciting event where participants will
-                           have to solve a series of IT-related puzzles and riddles to find the hidden
-                            "treasure". Along the way, participants will be testing their knowledge in
-                             different IT-related areas, such as programming languages, hardware, and cybersecurity.</p>
-                  </div>
-              </li>
-          </uL>
-      </section>
+            <li>
+              <div>
+                <h3 class="event-heading">Tech-Tangle</h3>
+                <p class="event-tagline">
+                  This event is a potpourri
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h3 class="event-heading">Game on!</h3>
+                <p class="event-tagline">
+                  Show us your skills in the game of BGMI
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h3 class="event-heading">WereWolves within</h3>
+                <p class="event-tagline">
+                  Treasure Hunt
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
+
+      <!-- Footer -->
+      <footer id="contact-section" class="text-center text-lg-start bg-light">
+        <!-- Section: Links  -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-top border-bottom"
+        >
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">Syntaxia</h6>
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="#!"
+                  role="button"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Faculty Coordinator</h6>
+                <p>
+                  <a href="#!" class="text-reset">Prasanti</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset"></a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset"></a>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Event Coordinators</h6>
+                <p>
+                  <a href="#!" class="text-reset">Gaurav</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Shashank</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Siddharth</a>
+                </p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4"></h6>
+                <p>
+                  <a href="#!" class="text-reset">Gaurav</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Shashank</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Siddharth</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fa-solid fa-location-dot me-3"></i> SJU Address</p>
+                <p><i class="fas fa-envelope me-3"></i>Email address</p>
+                <p><i class="fas fa-phone me-3"></i>Phone no</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-2" id="copyright">
+          © 2023 Copyright
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+            >Technofite</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
     </div>
 
     <!-- MDB -->
@@ -213,6 +313,6 @@
     </script>
 
     <!--Timeline-->
-    <script src="timeline.js"></script>   
+    <script src="timeline.js"></script>
   </body>
 </html>

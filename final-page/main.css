@@ -23,14 +23,14 @@ body {
   background-color: rgba(0, 0, 0, 0.425);
 }
 
-/* NAVBAR */
+/* NAVIGATION BAR */
 .navbar {
   font-family: valorax;
-  text-shadow: 1px 1px 5px #170247, 0 0 0.25em #986EF8;
+  text-shadow: 1px 1px 5px #170247, 0 0 0.25em #986ef8;
 }
 
-.nav-link{
-  font-size: clamp(0.2rem, 5vw, 1.2rem); 
+.nav-link {
+  font-size: clamp(0.2rem, 5vw, 1.2rem);
 }
 
 /* Color of the links BEFORE scroll */
@@ -48,7 +48,7 @@ body {
 }
 /* Color of the navbar AFTER scroll */
 .navbar-after-scroll {
-  background-color: transparent;
+  background-color: #010118;
 }
 
 /* Transition after scrolling */
@@ -72,15 +72,20 @@ body {
   #navbar-btn {
     color: #ffffff !important;
   }
+
+  #home-section  {  
+    letter-spacing: 20px;
+    overflow-wrap: anywhere;
+  }
 }
 
 .nav-link:hover {
-  text-shadow: 1px 1px 7px #986EF8, 0 0 0.3em #986EF8, 0 0 0.2em #986EF8;
+  text-shadow: 1px 1px 7px #986ef8, 0 0 0.3em #986ef8, 0 0 0.2em #986ef8;
   /* text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986EF8, 0 0 0.5em #8336BA; */
 }
 
-/* WELCOME */
-#home {
+/* HOME SECTION */
+#home-section {
   display: flex;
   width: 100%;
   height: 100vh;
@@ -91,23 +96,59 @@ body {
   margin: 0;
   font-family: valorax;
   text-transform: uppercase;
-  text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986EF8, 0 0 0.5em #8336BA;
+  text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986ef8, 0 0 0.5em #8336ba;
   /* text-shadow: 1px 1px 5px grey, 0 0 0.3em white, 0 0 0.2em grey; */
   overflow-x: hidden;
 }
 
-#home h1 {
+#home-section h1 {
   font-size: clamp(1rem, 10vw, 7rem);
   color: white;
   margin-bottom: 0;
   text-align: center;
   justify-content: center;
   white-space: nowrap;
-  
 }
 
-#home h2 {
+#home-section h2 {
   font-size: clamp(0.5rem, 5vw, 3rem);
   color: white;
-  /* text-shadow: 0 0 0.2em grey, 0 0 0.1em grey; */
+}
+
+/* EVENT SECTION */
+.timeline-section h2 {
+  font-family: valorax;
+  text-transform: uppercase;
+  color: white;
+  font-size: clamp(0.5rem, 5vw, 3rem);
+  text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986ef8, 0 0 0.3em #8336ba;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 20px;
+}
+
+.timeline-section ul li div {
+  font-family: valorax !important;
+  /* font-size: 2rem !important; */
+}
+
+.timeline-section .event-heading {
+  text-shadow: 1px 1px 5px #170247, 0 0 0.2em #986ef8, 0 0 0.2em #8336ba;
+  font-size: clamp(0.5rem, 5vw, 1.7rem);
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.timeline-section .event-tagline {
+  font-family: "VT323", monospace;
+  font-size: clamp(0.2rem, 5vw, 1.5rem);
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.842) !important;
+  text-shadow: 1px 1px 5px #170247, 0 0 0.2em #986ef8, 0 0 0.2em #170247;
+}
+
+/* CONTACT SECTION */
+#contact-section {
+  background: #010118b6 !important;
+  color: white;
 }
