@@ -72,11 +72,6 @@ body {
   #navbar-btn {
     color: #ffffff !important;
   }
-
-  #home-section  {  
-    letter-spacing: 20px;
-    overflow-wrap: anywhere;
-  }
 }
 
 .nav-link:hover {
@@ -120,7 +115,7 @@ body {
   font-family: valorax;
   text-transform: uppercase;
   color: white;
-  font-size: clamp(0.5rem, 5vw, 3rem);
+  font-size: clamp(0.7rem, 5vw, 3rem);
   text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986ef8, 0 0 0.3em #8336ba;
   margin: 0;
   text-align: center;
@@ -136,7 +131,7 @@ body {
   text-shadow: 1px 1px 5px #170247, 0 0 0.2em #986ef8, 0 0 0.2em #8336ba;
   font-size: clamp(0.5rem, 5vw, 1.7rem);
   letter-spacing: 2px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .timeline-section .event-tagline {

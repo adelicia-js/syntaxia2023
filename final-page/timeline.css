@@ -56,7 +56,8 @@ img {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    /* background-color: black; */
+    background-color: #010118;
+    box-shadow: 1px 1px 5px #986ef8, 0 0 0.2em #986ef8, 0 0 0.2em #986ef8;
     border: 0.2rem solid white;
 }
 
@@ -91,7 +92,6 @@ img {
 .timeline-section ul li:nth-child(even) div {
     left: -439px;
 }
-  
 
 .event-heading {
     display: block;
@@ -149,7 +149,7 @@ img {
     .timeline-section ul li {
       margin-left: 2rem;
     }
-  
+
     .timeline-section ul li div {
       width: calc(100vw - 91px);
     }
@@ -157,7 +157,7 @@ img {
     .timeline-section ul li:nth-child(even) div {
       left: 45px;
     }
-  
+
     .timeline-section ul li:nth-child(even) div::before {
       left: -15px;
       border-width: 8px 16px 8px 0;
