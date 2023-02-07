@@ -80,6 +80,7 @@ img {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     border-right: 2px solid rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255,255,255,0.2);
+    cursor: pointer;
 }
 
 /* Pushes the divs at odd number position to the right */
