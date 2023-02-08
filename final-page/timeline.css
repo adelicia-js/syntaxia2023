@@ -152,6 +152,11 @@ img {
   /* white-space: nowrap; */
 }
 
+.timeline-section .event-heading:hover {
+  color:#010118;
+  text-shadow: 1px 0.1px 10px #986ef8; 
+}
+
 .timeline-section .event-tagline {
   font-family: "VT323", monospace;
   font-size: clamp(0.2rem, 5vw, 1.5rem);
@@ -196,3 +201,90 @@ img {
     }
 }
 
+/* MODALS */
+.modal-content {
+  background: #010118;
+  color: white;
+  box-shadow: 1px 0.1px 5px #010118, 1px 0.1px 15px #986ef8, 1px 0.1px 10px #010118;
+}
+
+.modal-header {
+  border-bottom: transparent;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.modal-header h5 {
+  font-family: valorax;
+  font-size: clamp(0.2rem, 5vw, 1.5rem);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 1px 0.1px 5px #986ef8, 0 0 0.2em #010118;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.modal-body h6 {
+  font-size: clamp(0.2rem, 5vw, 1.5rem);
+  text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
+  letter-spacing: 1.5px;
+  font-family: "VT323", monospace;
+  padding-top: 1rem;
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+
+.modal-body p {
+  font-size: clamp(0.2rem, 5vw, 1.3rem);
+  text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
+  letter-spacing: 1.5px;
+  font-family: "VT323", monospace;
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.modal-body ol li {
+  font-size: clamp(0.2rem, 5vw, 1.3rem);
+  text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
+  letter-spacing: 1.5px;
+  font-family: "VT323", monospace;
+  padding-bottom: 0;
+}
+
+.modal-body .event-heads {
+  list-style-type: none;
+  padding-left: 0;
+  /* text-align: center; */
+  font-size: clamp(0.2rem, 5vw, 1.4rem);
+  text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
+  letter-spacing: 1.5px;
+  font-family: "VT323", monospace;
+}
+
+.modal-footer {
+  border-top: transparent;
+  padding-top: 0;
+} 
+
+#events-section .modal-footer .btn {
+  font-family: valorax;
+  text-transform: lowercase;
+  margin: 0 auto;
+  color: #010118;
+  text-shadow: 1px 0.1px 5px white, 1px 0.1px 1.5px #010118;
+  font-size: clamp(0.1rem, 5vw, 0.8rem);
+  letter-spacing: 1px;  
+}
+
+#events-section .modal-footer .btn:hover {
+  background:#986ef8;
+  color: #010118;
+  box-shadow: 1px 0.1px 7px white !important;
+}

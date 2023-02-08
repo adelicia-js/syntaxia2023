@@ -126,7 +126,7 @@ body {
   color: white;
   font-size: clamp(0.7rem, 5vw, 3rem);
   text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986ef8, 0 0 0.3em #8336ba;
-  padding-bottom: 1.5rem;
+  padding: 1rem 0 1.5rem 0;
 }
 
 #registration-section #cards-box {
@@ -144,7 +144,13 @@ body {
 }
 
 #registration-section .card-header h5 {
+  font-family: valorax;
   font-size: clamp(0.2rem, 5vw, 1.5rem);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 1px #010118, 0 0 0.2em #986ef8;
+  white-space: nowrap;
 }
 
 #registration-section .card-body ul {
@@ -154,7 +160,9 @@ body {
 #registration-section .card-body li {
   background: #010118 !important;
   color: white !important;
-  font-size: clamp(0.2rem, 5vw, 1.2rem);
+  font-size: clamp(0.2rem, 5vw, 1.3rem);
+  text-shadow: 1px 1px 3px #010118, 0 0 0.1em #986ef8;
+  letter-spacing: 1px;
 }
 
 #registration-section .card-footer {
@@ -164,7 +172,15 @@ body {
 #registration-section .card-footer .reg-btn {
   background: #986ef8;
   box-shadow: 1px 0.1px 5px white;
-  
+  font-family: valorax;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+#registration-section .card-footer .reg-btn:hover {
+  background: rgb(255, 255, 255);
+  box-shadow: 1px 0.1px 15px #986ef8;
+  color: #010118;
 }
 
 #guidelines-section {
@@ -174,8 +190,77 @@ body {
 
 #guidelines-section #guide-btn {
   background: white;
-  box-shadow: 1px 0.1px 15px #010118, 1px 0.1px 15px #986ef8, 1px 0.1px 10px #010118;
+  box-shadow: 1px 0.1px 15px #986ef8, 1px 0.1px 10px #010118;
   color: #010118;
+  text-transform: lowercase;
+  font-size: clamp(0.2rem, 5vw, 0.9rem);
+}
+
+#guidelines-section #guide-btn:hover {
+  background:#010118;
+  color: white;
+  box-shadow: 1px 0.1px 5px #010118, 1px 0.1px 15px #986ef8, 0 0 1px #010118;
+}
+
+#guidelinesModal .modal-content {
+  /* background: radial-gradient(#ffffff, #8336ba, #ffffff); */
+  /* color: #010118; */
+  /* text-shadow: 1px 1px 0.2em #986ef8; */
+  background: #010118;
+  color: white;
+  box-shadow: 1px 0.1px 5px #010118, 1px 0.1px 15px #986ef8, 1px 0.1px 10px #010118;
+
+}
+
+#guidelinesModal .modal-header {
+  border-bottom: transparent;
+  margin: 0 auto;
+  padding-bottom: 0;
+} 
+
+#guidelinesModal .modal-header h5{
+  font-family: valorax;
+  font-size: clamp(0.2rem, 5vw, 1.5rem);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 1px #010118, 0 0 0.2em #986ef8;
+  white-space: nowrap;
+  text-align: center;
+}
+
+#guidelinesModal .modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#guidelinesModal .modal-body ol li {
+  font-size: clamp(0.2rem, 5vw, 1.32rem);
+  text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
+  letter-spacing: 1.5px;
+  font-family: "VT323", monospace;
+}
+
+#guidelinesModal .modal-footer {
+  border-top: transparent;
+  padding-top: 0;
+  padding-bottom: 1rem;
+} 
+
+#guidelinesModal .modal-footer #guide-close-btn{
+  font-family: valorax;
+  text-transform: lowercase;
+  margin: 0 auto;
+  color: #010118;
+  text-shadow: 1px 0.1px 5px white, 1px 0.1px 1.5px #010118;
+  font-size: clamp(0.1rem, 5vw, 0.8rem);
+  letter-spacing: 1px;
+}
+
+#guidelinesModal #guide-close-btn:hover{
+  background:#986ef8;
+  color: white;
+  box-shadow: 1px 0.1px 7px white, 1px 0.1px 5px #010118 !important;
 }
 
 /* SPONSORS SECTION */
@@ -189,7 +274,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-
 /* CONTACT SECTION */
 #contact-section {
   background: #010118b6 !important;
@@ -202,7 +286,6 @@ body {
 
 #contact-section div {
   font-family: "VT323", monospace !important;
-
   color: white;
   display: flex;
   align-items: center;
