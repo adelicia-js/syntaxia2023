@@ -52,11 +52,12 @@
           <div class="container-fluid">
             <a class="navbar-brand mt-2 mt-lg-0" href="#">
               <img
-                src=""
+                src="technophite.png"
                 height="30"
                 alt="Fest"
                 loading="lazy"
                 style="color: white"
+                id="technophite-logo"
               />
               <!-- Change the image to Syntaxia's logo, colour is temp -->
             </a>
@@ -85,7 +86,9 @@
                   <a class="nav-link" href="#events-section">Events</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Registration</a>
+                  <a class="nav-link" href="#registration-section"
+                    >Registration</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contact-section">Contact Us</a>
@@ -112,534 +115,733 @@
         </section>
 
         <!--Events-->
-        <section class="events-sec">
-          <div class="event-heading w-auto d-flex justify-content-center">
-              <h2>Events</h2>
-          </div>
-          <div class="event-heading w-auto d-flex justify-content-center">
-              <h2>Day 1</h2>
-          </div>
+        <section id="events-section">
           <section class="timeline-section">
-              <!--Put all that should be in the timeline inside a ul tag-->
-              <!--Each li is an event-->
-              <uL>
-                  <li>
-                      <div>
-                          <!--Event heading-->
-                      <h3 class="event-heading" data-mdb-toggle="modal" data-mdb-target="#prodigyModal">Project Prodigy</h3>
-                      <!--Event tagline/description-->
-                      <p class="event-tagline" data-mdb-toggle="modal" data-mdb-target="#prodigyModal">IT manager</p>
-                      </div>
-                  </li>
-                  
-                  <li>
-                  <div id="werewolvesOneLine">
-                      <h3 class="event-heading" data-mdb-toggle="modal" data-mdb-target="#wereWolvesModal">WereWolves Within </h3>
-                      <p class="event-tagline" data-mdb-toggle="modal" data-mdb-target="#wereWolvesModal">IT treasure hunt
-                      </p>
-                  </div> 
-                  </li>
-          
-                  <li>
-                      <div>
-                          <h3 class="event-heading" data-mdb-toggle="modal" data-mdb-target="#brainWaveModal">BrainWave Byte</h3>
-                          <p class="event-tagline" data-mdb-toggle="modal" data-mdb-target="#brainWaveModal">IT quiz</p>   
-                      </div>
-                  </li>
-  
-                  <li>
-                      <div>
-                          <h3 class="event-heading" data-mdb-toggle="modal" data-mdb-target="#topNotchModal">TopNotch Design </h3>
-                          <p class="event-tagline" data-mdb-toggle="modal" data-mdb-target="#topNotchModal">UI design</p>
-                      </div>
-                  </li>
-              </uL>
-          </section>
-          <div class="event-heading w-auto d-flex justify-content-center">
-              <h2>Day 2</h2>
-          </div>
-          <section class="timeline-section">
-              <!--Put all that should be in the timeline inside a ul tag-->
-              <!--Each li is an event-->
-              <uL>
-                  <li>
-                      <div>
-                          <!--Event heading-->
-                      <h3 class="event-heading" data-mdb-toggle="modal" data-mdb-target="#codeWarsModal">Code Wars </h3>
-                      <!--Event tagline/description-->
-                      <p class="event-tagline" data-mdb-toggle="modal" data-mdb-target="#codeWarsModal">Coding Debugging</p>
-                      </div>
-                  </li>
-                  
-                  <li>
-                  <div>
-                      <h3 class="event-heading" data-mdb-toggle="modal" data-mdb-target="#visVoiceModal">Visionary Voice  </h3>
-                      <p class="event-tagline" data-mdb-toggle="modal" data-mdb-target="#visVoiceModal">Lecture contest
-                      </p>
-                  </div> 
-                  </li>
-          
-                  <li>
-                      <div>
-                          <h3 class="event-heading" data-mdb-toggle="modal" data-mdb-target="#tangleModal">Tech-Tangle</h3>
-                          <p class="event-tagline"  data-mdb-toggle="modal" data-mdb-target="#tangleModal">potpourri</p>   
-                      </div>
-                  </li>
-              </uL>
+            <!--Put all that should be in the timeline inside a ul tag-->
+            <!--Each li is an event-->
+            <h2>Events</h2>
+            <br />
+            <h2>Day 1</h2>
+            <ul>
+              <li>
+                <div>
+                  <!--Event heading-->
+                  <h3
+                    class="event-heading"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#prodigyModal"
+                  >
+                    Project Prodigy
+                  </h3>
+                  <!--Event tagline/description-->
+                  <p
+                    class="event-tagline"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#prodigyModal"
+                  >
+                    IT manager
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3
+                    id="werewolvesOneLine"
+                    class="event-heading"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#wereWolvesModal"
+                  >
+                    WereWolves Within
+                  </h3>
+                  <p
+                    class="event-tagline"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#wereWolvesModal"
+                  >
+                    IT treasure hunt
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3
+                    class="event-heading"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#brainWaveModal"
+                  >
+                    BrainWave Byte
+                  </h3>
+                  <p
+                    class="event-tagline"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#brainWaveModal"
+                  >
+                    IT quiz
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3
+                    class="event-heading"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#topNotchModal"
+                  >
+                    TopNotch Design
+                  </h3>
+                  <p
+                    class="event-tagline"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#topNotchModal"
+                  >
+                    UI design
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <h2>Day 2</h2>
+            <ul>
+              <li>
+                <div>
+                  <!--Event heading-->
+                  <h3
+                    class="event-heading"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#codeWarsModal"
+                  >
+                    Code Wars
+                  </h3>
+                  <!--Event tagline/description-->
+                  <p
+                    class="event-tagline"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#codeWarsModal"
+                  >
+                    Coding Debugging
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3
+                    class="event-heading"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#visVoiceModal"
+                  >
+                    Visionary Voice
+                  </h3>
+                  <p
+                    class="event-tagline"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#visVoiceModal"
+                  >
+                    Lecture contest
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3
+                    class="event-heading"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#tangleModal"
+                  >
+                    Tech-Tangle
+                  </h3>
+                  <p
+                    class="event-tagline"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#tangleModal"
+                  >
+                    potpourri
+                  </p>
+                </div>
+              </li>
+            </ul>
           </section>
           <!-- Project Prodigy Modal -->
-          <div class="modal fade" id="prodigyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
+          <div
+            class="modal fade"
+            id="prodigyModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Project Prodigy</h5>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      <p>Description: This event is an opportunity for IT students to showcase their 
-                          ability to plan, organize, and execute a project from start to finish. Participants
-                           will display their ability to manage time, resources and handle stress during this event.
-                      </p>
-                      <p>
-                          Rules:
-                          <ol>
-                              <li>Individual event.</li>
-                              <li>The rounds and rules for the respective rounds will be disclosed on the day of the event.</li>
-                              <li>The judges decision will be final and binding.</li>
-                          </ol>
-                      </p>
-                      <p>Event heads:
-                      Abdul (+91 92078 06803)</p>
-                      </div>
-                  <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-                  </div>
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Project Prodigy
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Description: This event is an opportunity for IT students to
+                    showcase their ability to plan, organize, and execute a
+                    project from start to finish. Participants will display
+                    their ability to manage time, resources and handle stress
+                    during this event.
+                  </p>
+                  <p>Rules:</p>
+
+                  <ol>
+                    <li>Individual event.</li>
+                    <li>
+                      The rounds and rules for the respective rounds will be
+                      disclosed on the day of the event.
+                    </li>
+                    <li>The judges decision will be final and binding.</li>
+                  </ol>
+                  <p>Event heads: Abdul (+91 92078 06803)</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-mdb-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
-              </div>
+            </div>
           </div>
           <!-- Werewolves Within Modal -->
-          <div class="modal fade" id="wereWolvesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
+          <div
+            class="modal fade"
+            id="wereWolvesModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">WereWolves Within </h5>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      <p>It is fun and exciting event where participants will have to solve a series of IT-related puzzles and riddles
-                           to find the hidden "treasure". Along the way,
-                           participants will be testing their knowledge in different IT-related areas, such as programming languages, hardware, and cybersecurity.
-                      </p>
-                      <p>
-                          Rules:
-                          <ol>
-                              <li>Max 4 per team</li>
-                              <li>2 team/ college</li>
-                              <li>Rules will be explained during the vent</li>
-                          </ol>
-                      </p>
-                      <p>Event heads:
-                      ?</p>
-                      </div>
-                  <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-                  </div>
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    WereWolves Within
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    It is fun and exciting event where participants will have to
+                    solve a series of IT-related puzzles and riddles to find the
+                    hidden "treasure". Along the way, participants will be
+                    testing their knowledge in different IT-related areas, such
+                    as programming languages, hardware, and cybersecurity.
+                  </p>
+                  <p>Rules:</p>
+
+                  <ol>
+                    <li>Max 4 per team</li>
+                    <li>2 team/ college</li>
+                    <li>Rules will be explained during the vent</li>
+                  </ol>
+                  <p>Event heads: ?</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-mdb-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
-              </div>
+            </div>
           </div>
           <!-- BrainWave Bytes Modal -->
-          <div class="modal fade" id="brainWaveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
+          <div
+            class="modal fade"
+            id="brainWaveModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">BrainWave Byte</h5>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      <p>Description: A group event where the participants are tested on their knowledge on a wide range of topics from computer hardware to cloud architectures, with various rounds like buzzer rounds, rapid fire and so on.
-                          Rules: Individual or team of 2, max 3 teams per college, Malpractices will lead to disqualifications. 
-                      </p>
-                      <p>
-                          Rules:
-                          <ol>
-                              <li>Individual or team of 2</li>
-                              <li>max 3 teams per college</li>
-                              <li>Malpractices will lead to disqualifications.</li>
-                          </ol>
-                      </p>
-                      <p>Event heads:
-                      Pooja A, Suhana Nayak B</p>
-                      </div>
-                  <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-                  </div>
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    BrainWave Byte
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Description: A group event where the participants are tested
+                    on their knowledge on a wide range of topics from computer
+                    hardware to cloud architectures, with various rounds like
+                    buzzer rounds, rapid fire and so on. Rules: Individual or
+                    team of 2, max 3 teams per college, Malpractices will lead
+                    to disqualifications.
+                  </p>
+                  <p>Rules:</p>
+
+                  <ol>
+                    <li>Individual or team of 2</li>
+                    <li>max 3 teams per college</li>
+                    <li>Malpractices will lead to disqualifications.</li>
+                  </ol>
+                  <p>Event heads: Pooja A, Suhana Nayak B</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-mdb-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
-              </div>
+            </div>
           </div>
           <!-- TopNotch Design Modal -->
-          <div class="modal fade" id="topNotchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
+          <div
+            class="modal fade"
+            id="topNotchModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">TopNotch Design</h5>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      <p>
-                          Description: This competition is an opportunity for students to demonstrate their ability to create visually 
-                          appealing and user-friendly interfaces using CSS. Participants will be given a design brief and will be judged on their ability to create a
-                           responsive and visually appealing layout, use of CSS effects and features and their attention to detail.
-                      </p>
-                      <p>
-                          Rules:
-                          <ol>
-                              <li>Max 3 teams per college</li>
-                              <li>Individual or teams of 2</li>
-                              <li>Judges decision will be final</li>
-                              <li>Theme will be provided on during the event</li>
-                          </ol>
-                      </p>
-                      <p>Event heads:
-                      Celesta, Alan</p>
-                      </div>
-                  <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-                  </div>
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    TopNotch Design
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Description: This competition is an opportunity for students
+                    to demonstrate their ability to create visually appealing
+                    and user-friendly interfaces using CSS. Participants will be
+                    given a design brief and will be judged on their ability to
+                    create a responsive and visually appealing layout, use of
+                    CSS effects and features and their attention to detail.
+                  </p>
+                  <p>Rules:</p>
+
+                  <ol>
+                    <li>Max 3 teams per college</li>
+                    <li>Individual or teams of 2</li>
+                    <li>Judges decision will be final</li>
+                    <li>Theme will be provided on during the event</li>
+                  </ol>
+                  <p>Event heads: Celesta, Alan</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-mdb-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
-              </div>
+            </div>
           </div>
           <!-- Code Wars Modal -->
-          <div class="modal fade" id="codeWarsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Code Wars</h5>
-                          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                              Description: A group coding and debugging event where the participants are given challenging 
-                              problems and are judged by their abilities to write efficient, error free and well documented code.
-                          </p>
-                          <p>
-                              Rules:
-                              <ol>
-                                  <li>Team event max 3</li>
-                                  <li>Programming languages like C++, java and python are allowed</li>
-                                  <li>3 team per college</li>
-                              </ol>
-                          </p>
-                          <p>Event heads:
-                          Celesta, Alan</p>
-                          </div>
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-                      </div>
-                  </div>
+          <div
+            class="modal fade"
+            id="codeWarsModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Code Wars</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Description: A group coding and debugging event where the
+                    participants are given challenging problems and are judged
+                    by their abilities to write efficient, error free and well
+                    documented code.
+                  </p>
+                  <p>Rules:</p>
+
+                  <ol>
+                    <li>Team event max 3</li>
+                    <li>
+                      Programming languages like C++, java and python are
+                      allowed
+                    </li>
+                    <li>3 team per college</li>
+                  </ol>
+                  <p>Event heads: Celesta, Alan</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-mdb-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
+            </div>
           </div>
           <!-- Visionary Voice Modal -->
-          <div class="modal fade" id="visVoiceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Visionary Voice</h5>
-                          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                              Description: This event is an opportunity for students to showcase their
-                               knowledge and share their thoughts on the latest trends and advancements in the field of IT. It's a platform 
-                              for students to learn and grow by listening to the experiences and ideas of their peers.
-                          </p>
-                          <p>
-                              Rules:
-                              <ol>
-                                  <li>The teams will have 15 minutes for presentations followed by a question-and-answer session</li>
-                                  <li>The time limit should be strictly followed</li>
-                                  <li>extension may lead to deduction of marks</li>
-                                  <li>Decision of the judges will be final</li>
-                              </ol>
-                          </p>
-                          <p>Event heads:
-                          Deepshika, Ujjwal</p>
-                          </div>
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-                      </div>
-                  </div>
+          <div
+            class="modal fade"
+            id="visVoiceModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Visionary Voice
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Description: This event is an opportunity for students to
+                    showcase their knowledge and share their thoughts on the
+                    latest trends and advancements in the field of IT. It's a
+                    platform for students to learn and grow by listening to the
+                    experiences and ideas of their peers.
+                  </p>
+                  <p>Rules:</p>
+
+                  <ol>
+                    <li>
+                      The teams will have 15 minutes for presentations followed
+                      by a question-and-answer session
+                    </li>
+                    <li>The time limit should be strictly followed</li>
+                    <li>extension may lead to deduction of marks</li>
+                    <li>Decision of the judges will be final</li>
+                  </ol>
+                  <p>Event heads: Deepshika, Ujjwal</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-mdb-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
+            </div>
           </div>
           <!-- Tech Tangle Modal -->
-          <div class="modal fade" id="tangleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Tech-Tangle</h5>
-                          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                              Description: This event is a potpourri of fun activities all related to IT. 
-                              With a mix of serious and light-hearted activities, it's an opportunity for students 
-                              to showcase their tech skills in a fun and relaxed atmosphere. It's a great way to bond with your peers and learn something new in the process. 
-                          </p>
-                          <p>
-                              Rules:
-                              <ol>
-                                  <li>Team event (max 3 per team)</li>
-                                  <li>Max 3 teams per college</li>
-                                  <li>Rounds and rules will be disclosed during the event</li>
-                              </ol>
-                          </p>
-                          <p>Event heads:
-                          Payal</p>
-                          </div>
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-      </section>
-
-      <!--Registration-->
-        <section class="reg-sec">
-          <div class="reg-heading w-auto d-flex justify-content-center">
-              <h2>Register Now!</h2>
-          </div> 
-          
-          <div class="container">
-              <!--Section: Content-->
-              <section class="text-center">
-            
-                <div class="row gx-lg-5">
-            
-                  <!--Grid column-->
-                  <div class="col-lg-4 col-md-6 mb-4">
-            
-                    <!-- Card -->
-                    <div class="card">
-            
-                      <div class="card-header bg-white py-3">
-                        <h5 class="mb-0">Individual</h5>
-                      </div>
-            
-                      <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Registration for Individual </li>
-                          <li class="list-group-item">Inclusive of food</li>
-                          <li class="list-group-item">Rs. 250</li>
-                        </ul>
-                      </div>
-            
-                      <div class="card-footer bg-white py-3">
-                        <button type="button" class="btn btn-success btn-sm">Register</button>
-                      </div>
-            
-                    </div>
-                    <!-- Card -->
-            
-                  </div>
-                  <!--Grid column-->                    
-            
-                  <!--Grid column-->
-                  <div class="col-lg-4 col-md-6 mb-4">
-            
-                      <!-- Card -->
-                      <div class="card">
-              
-                        <div class="card-header bg-white py-3">
-                          <h5 class="mb-0">Small Group</h5>
-                        </div>
-              
-                        <div class="card-body">
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Registration for 6-10</li>
-                            <li class="list-group-item">Inclusive of food</li>
-                            <li class="list-group-item">Rs. 2000</li>
-                          </ul>
-                        </div>
-              
-                        <div class="card-footer bg-white py-3">
-                          <button type="button" class="btn btn-success btn-sm">Register</button>
-                        </div>
-              
-                      </div>
-                      <!-- Card -->
-              
-                    </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
-                  <div class="col-lg-4 col-md-6 mb-4">
-            
-                      <!-- Card -->
-                      <div class="card">
-              
-                        <div class="card-header bg-white py-3">
-                          <h5 class="mb-0">Large Group</h5>
-                        </div>
-              
-                        <div class="card-body">
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Registration for 10 - 15</li>
-                            <li class="list-group-item">Inclusive of food</li>
-                            <li class="list-group-item">Rs. 3200</li>
-                          </ul>
-                        </div>
-              
-                        <div class="card-footer bg-white py-3">
-                          <button type="button" class="btn btn-success btn-sm">Register</button>
-                        </div>
-              
-                      </div>
-                      <!-- Card -->
-              
-                    </div>
-                    <!--Grid column-->
+          <div
+            class="modal fade"
+            id="tangleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Tech-Tangle
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
-              </section>
-              <!--Section: Content-->
-          </div>
+                <div class="modal-body">
+                  <p>
+                    Description: This event is a potpourri of fun activities all
+                    related to IT. With a mix of serious and light-hearted
+                    activities, it's an opportunity for students to showcase
+                    their tech skills in a fun and relaxed atmosphere. It's a
+                    great way to bond with your peers and learn something new in
+                    the process.
+                  </p>
+                  <p>Rules:</p>
 
-          
-          <div class="reg-btn w-auto d-flex justify-content-center">
-              <button type="button" class="btn btn-info btn-rounded" data-mdb-toggle="modal" data-mdb-target="#guidelinesModal">Guidelines</button>
-          </div> 
-          <!-- Guidelines Modal -->
-          <div class="modal fade" id="guidelinesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Guidelines</h5>
-                          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                              <ol>
-                                  <li>Any student pursuing a postgraduate degree in Statistics, Data Science, Mathematics, Computer Science can participate.
-                                  </li>
-                                  <li>All participants are requested to get a permission letter from their respective institutions and ID cards to participate in the event.
-                                  </li>
-                                  <li>Participants are requested to register beforehand.
-                                  </li>
-                                  <li>Participating teams/participants may lodge objections on technical matters within 30 minutes of the completion of the event.
-                                  </li>
-                                  <li>Participants are expected to be in a formal dress code.
-                                  </li>
-                                  <li>Participants are requested to be present at the venue of their events 15 minutes before the event starts. If eliminated, participants are welcome to participate in other events, keeping the time constraints in mind.
-                                  </li>
-                                  <li>Participants can participate in more than one event simultaneously, given that they manage their event schedule accordingly.
-                                  </li>
-                              </ol>
-                          </p>
-                          </div>
-                      <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-                      </div>
-                  </div>
+                  <ol>
+                    <li>Team event (max 3 per team)</li>
+                    <li>Max 3 teams per college</li>
+                    <li>Rounds and rules will be disclosed during the event</li>
+                  </ol>
+                  <p>Event heads: Payal</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-mdb-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
+            </div>
           </div>
         </section>
-      <!--End Registration-->
+
+        <!--Registration-->
+        <section id="registration-section">
+          <div class="reg-heading w-auto d-flex justify-content-center">
+            <h2>Register Now!</h2>
+          </div>
+
+          <div class="container">
+            <!--Section: Content-->
+            <section class="text-center">
+              <div id="cards-box" class="row gx-lg-5">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-header py-3">
+                      <h5 class="mb-0">Individual</h5>
+                    </div>
+
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Registration for 1
+                        </li>
+                        <li class="list-group-item">Inclusive of food</li>
+                        <li class="list-group-item">Rs. 250</li>
+                      </ul>
+                    </div>
+
+                    <div class="card-footer py-3">
+                      <button type="button" class="btn btn-success btn-sm reg-btn">
+                        Select Pass
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Card -->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-header py-3">
+                      <h5 class="mb-0">Small Group</h5>
+                    </div>
+
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Registration for 10</li>
+                        <li class="list-group-item">Inclusive of food</li>
+                        <li class="list-group-item">Rs. 2000</li>
+                      </ul>
+                    </div>
+
+                    <div class="card-footer py-3">
+                      <button type="button" class="btn btn-success btn-sm reg-btn">
+                        Select Pass
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Card -->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-header py-3">
+                      <h5 class="mb-0">Large Group</h5>
+                    </div>
+
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Registration for 15
+                        </li>
+                        <li class="list-group-item">Inclusive of food</li>
+                        <li class="list-group-item">Rs. 3200</li>
+                      </ul>
+                    </div>
+
+                    <div class="card-footer py-3">
+                      <button type="button" class="btn btn-success btn-sm reg-btn">
+                        Select Pass
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Card -->
+                </div>
+                <!--Grid column-->
+              </div>
+            </section>
+            <!--Section: Content-->
+          </div>
+
+          <div
+            id="guidelines-section"
+            class="w-auto d-flex justify-content-center"
+          >
+            <button
+              id="guide-btn"
+              type="button"
+              class="btn btn-info btn-rounded"
+              data-mdb-toggle="modal"
+              data-mdb-target="#guidelinesModal"
+            >
+              Guidelines
+            </button>
+          </div>
+          <!-- Guidelines Modal -->
+          <div
+            class="modal fade"
+            id="guidelinesModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Guidelines</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p></p>
+                  <ol>
+                    <li>
+                      Any student pursuing a postgraduate degree in Statistics,
+                      Data Science, Mathematics, Computer Science can
+                      participate.
+                    </li>
+                    <li>
+                      All participants are requested to get a permission letter
+                      from their respective institutions and ID cards to
+                      participate in the event.
+                    </li>
+                    <li>Participants are requested to register beforehand.</li>
+                    <li>
+                      Participating teams/participants may lodge objections on
+                      technical matters within 30 minutes of the completion of
+                      the event.
+                    </li>
+                    <li>
+                      Participants are expected to be in a formal dress code.
+                    </li>
+                    <li>
+                      Participants are requested to be present at the venue of
+                      their events 15 minutes before the event starts. If
+                      eliminated, participants are welcome to participate in
+                      other events, keeping the time constraints in mind.
+                    </li>
+                    <li>
+                      Participants can participate in more than one event
+                      simultaneously, given that they manage their event
+                      schedule accordingly.
+                    </li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-mdb-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--End Registration-->
+
+        <!-- <section id="sponsors-section"> -->
+          <!-- <p> -->
+            <!-- Content to be added here, soon. <br /> -->
+            <!-- Ignore the styling, please. It is temporary. -->
+          <!-- </p> -->
+        <!-- </section> -->
       </main>
 
       <!-- Footer -->
       <footer id="contact-section" class="text-center text-lg-start bg-light">
-        <!-- Section: Links  -->
-        <section
-          class="d-flex justify-content-center justify-content-lg-between p-4 border-top border-bottom"
-        >
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4">Syntaxia</h6>
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a
-                  class="btn btn-outline-light btn-floating m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Faculty Coordinator</h6>
-                <p>
-                  <a href="#!" class="text-reset">Prasanti</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset"></a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset"></a>
-                </p>
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Event Coordinators</h6>
-                <p>
-                  <a href="#!" class="text-reset">Gaurav</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Shashank</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Siddharth</a>
-                </p>
-              </div>
-
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4"></h6>
-                <p>
-                  <a href="#!" class="text-reset">Gaurav</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Shashank</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Siddharth</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i class="fa-solid fa-location-dot me-3"></i> SJU Address</p>
-                <p><i class="fas fa-envelope me-3"></i>Email address</p>
-                <p><i class="fas fa-phone me-3"></i>Phone no</p>
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-          </div>
-        </section>
-        <!-- Section: Links  -->
+        <div id="logo-box">
+          <img src="technophite.png" alt="" id="syntaxia-logo" />
+        </div>
+        <div id="nav-box">
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Events</li>
+            <li>Guidelines</li>
+            <li>Registration</li>
+            <li>Brochure</li>
+          </ul>
+        </div>
+        <div id="contact-box">
+          <ul>
+            <li><i class="fa-solid fa-location-dot me-3"></i>Address, at Address, Address</li>
+            <li><i class="fa-solid fa-envelope me-3"></i>technophite@gmail.com</li>
+            <li><i class="fa-solid fa-phone me-3"></i>+91 74673 43871</li>
+            <li><i class="fa-brands fa-instagram me-3"></i>technophite</li>
+          </ul>
+        </div>
 
         <!-- Copyright -->
         <div class="text-center p-2" id="copyright">
           © 2023 Copyright
-          <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-            >Technofite</a
-          >
+          <a class="text-reset fw-bold" href="">Technophite</a>
         </div>
         <!-- Copyright -->
       </footer>

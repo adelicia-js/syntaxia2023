@@ -29,6 +29,12 @@ body {
   text-shadow: 1px 1px 5px #170247, 0 0 0.25em #986ef8;
 }
 
+#technofite-logo {
+  width: clamp(3rem, 7vw, 6rem);
+  height: auto;
+  object-fit: contain;
+}
+
 .nav-link {
   font-size: clamp(0.2rem, 5vw, 1.2rem);
 }
@@ -111,41 +117,120 @@ body {
 }
 
 /* EVENT SECTION */
-.timeline-section h2 {
+
+
+/* REGISTRATION SECTION */
+#registration-section h2{
   font-family: valorax;
   text-transform: uppercase;
   color: white;
   font-size: clamp(0.7rem, 5vw, 3rem);
   text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986ef8, 0 0 0.3em #8336ba;
-  margin: 0;
-  text-align: center;
-  letter-spacing: 20px;
+  padding-bottom: 1.5rem;
 }
 
-.timeline-section ul li div {
-  font-family: valorax !important;
-  /* font-size: 2rem !important; */
+#registration-section #cards-box {
+  font-family: "VT323", monospace; 
 }
 
-.timeline-section .event-heading {
-  text-shadow: 1px 1px 5px #170247, 0 0 0.2em #986ef8, 0 0 0.2em #8336ba;
-  font-size: clamp(0.5rem, 5vw, 1.7rem);
-  letter-spacing: 2px;
-  /* white-space: nowrap; */
+#registration-section .card {
+  background: #010118;
+  box-shadow: 1px 0.1px 5px #010118, 1px 0.1px 15px #986ef8, 1px 0.1px 10px #010118;
+  color: white !important;
 }
 
-.timeline-section .event-tagline {
-  font-family: "VT323", monospace;
+#registration-section .card-header {
+  border-bottom: transparent;
+}
+
+#registration-section .card-header h5 {
   font-size: clamp(0.2rem, 5vw, 1.5rem);
-  letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.842) !important;
-  text-shadow: 1px 1px 5px #170247, 0 0 0.2em #986ef8, 0 0 0.2em #170247;
 }
+
+#registration-section .card-body ul {
+  border-radius: 5px;
+}
+
+#registration-section .card-body li {
+  background: #010118 !important;
+  color: white !important;
+  font-size: clamp(0.2rem, 5vw, 1.2rem);
+}
+
+#registration-section .card-footer {
+  border-top: transparent;
+}
+
+#registration-section .card-footer .reg-btn {
+  background: #986ef8;
+  box-shadow: 1px 0.1px 5px white;
+  
+}
+
+#guidelines-section {
+  font-family: valorax; 
+  padding-bottom: 1.5rem;
+}
+
+#guidelines-section #guide-btn {
+  background: white;
+  box-shadow: 1px 0.1px 15px #010118, 1px 0.1px 15px #986ef8, 1px 0.1px 10px #010118;
+  color: #010118;
+}
+
+/* SPONSORS SECTION */
+#sponsors-section {
+  box-shadow: 1px 0.1px 15px white;
+  height: 10vh;
+  background-color:#010118;
+  color:#ffffff;
+  font-family: valorax;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 
 /* CONTACT SECTION */
 #contact-section {
   background: #010118b6 !important;
   color: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  gap: 5px;
 }
 
+#contact-section div {
+  font-family: "VT323", monospace !important;
 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#logo-box #syntaxia-logo {
+  width: clamp(3rem, 7vw, 6rem);
+  height: auto;
+  object-fit: contain;
+}
+
+#nav-box ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#contact-box ul {
+  font-family: "VT323", monospace !important;
+}
+
+/* #socials-section {
+  display: flex;
+  flex-direction: row;
+} */
