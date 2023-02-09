@@ -125,8 +125,6 @@ body {
 
 
 /* REGISTRATION SECTION */
-
-
 #registration-section h2{
   font-family: valorax;
   text-transform: uppercase;
@@ -170,6 +168,7 @@ body {
   font-size: clamp(0.2rem, 5vw, 1.3rem);
   text-shadow: 1px 1px 3px #010118, 0 0 0.1em #986ef8;
   letter-spacing: 1px;
+  color:#170247
 }
 
 #registration-section .card-footer {
@@ -181,7 +180,7 @@ body {
   box-shadow: 1px 0.1px 5px white;
   font-family: valorax;
   text-transform: lowercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 #registration-section .card-footer .reg-btn:hover {
@@ -283,13 +282,14 @@ body {
 
 /* CONTACT SECTION */
 #contact-section {
-  background: #010118b6 !important;
+  background: #010118da !important;
   color: white;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
   gap: 5px;
   overflow-x: hidden;
+  width: 100%;
 }
 
 #contact-section div {
@@ -306,28 +306,112 @@ body {
 }
 
 #logo-box #syntaxia-logo {
-  width: clamp(3rem, 7vw, 6rem);
+  width: clamp(5rem, 25vw, 18rem);
   height: auto;
   object-fit: contain;
 }
 
+/* #contact-logo-box #sju-box {
+  justify-content: center;
+  margin-top: -1rem;
+  padding: 1rem;
+} */
+
+/* #contact-section #sju-logo {
+  width: clamp(1rem, 12vw, 6rem);
+  height: auto;
+  object-fit: contain;
+} */
+
 #nav-box ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+}
+
+#nav-box .nav-link {
+  font-size: clamp(0.4rem, 5vw, 1.4rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
+}
+#nav-box .nav-link:hover {
+  text-shadow: 1px 1px 7px #986ef8, 0 0 0.3em #986ef8, 0 0 0.2em #986ef8;
 }
 
 #contact-box ul {
   font-family: "VT323", monospace !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-/* #socials-section {
-  display: flex;
-  flex-direction: row;
-} */
+#contact-box ul li {
+  font-size: clamp(0.2rem, 5vw, 1.2rem);
+  color: white;
+  text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
+}
+
+#contact-box ul i {
+  font-size: clamp(0.1rem, 5vw, 1rem); 
+  padding-right: 1rem; 
+  text-shadow: 1px 1px 5px #010118, 0 0 0.3em #ffffff;
+
+}
+
+#contact-box ul .fa-envelope, #contact-box ul .fa-phone {
+  padding-right: 0.8rem;
+}
+
+#contact-box ul a {
+  text-decoration: none;
+  color: white;
+}
+
+#contact-box ul a:hover {
+  text-shadow: 1px 0.1px 5px #ffffff, 0 0 0.2em #986ef8;
+}
+
+#contact-box ul i:hover {
+  text-shadow: 1px 0.1px 15px #010118, 1px 0.1px 20px #ffffff, 0 0 0.3em #010118;
+}
+
+#copyright-section {
+  font-size: clamp(0.2rem, 5vw, 1rem);
+  margin-bottom: 0;
+}
+
+#copyright-section p {
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+#copyright-section a {
+  text-shadow: 1px 0.1px 5px #010118
+}
+#copyright-section a:hover {
+  text-shadow: 1px 0.1px 15px #010118, 1px 0.1px 5px #ffffff;
+}
+
+#copyright-section .special {
+  color: #C700FA !important;
+  text-shadow: 1px 0.1px 5px #010118, 1px 0.1px 3px #7000FF;
+  font-size: clamp(0.25rem, 5vw, 1.1rem);
+}
+
+#copyright-section .special:hover {
+  text-shadow: 1px 0.1px 1px #010118, 1px 0.1px 1em #C700FA, 0 0 0.3em #7000FF;
+}
+
+/* MEDIA QUERIES - RESPONSIVENESS */
 
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
+  
   /*Guidelines Button*/
   #guidelines-section #guide-btn {
     background: white;
@@ -338,6 +422,7 @@ body {
     margin-top: 5vh;
     margin-bottom: 5vh;
   }
+
   .reg-heading{
     margin-top: 10vh;
       margin-bottom: 10vh;
