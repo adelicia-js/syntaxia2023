@@ -9,11 +9,15 @@
   src: url("Valorax-lg25V.otf");
 }
 
-body {
+html, body{
   margin: 0;
   padding: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+body {
+  
   background-image: url("bg-img.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -30,7 +34,7 @@ body {
 }
 
 #technofite-logo {
-  width: clamp(3rem, 7vw, 6rem);
+  max-width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -116,10 +120,13 @@ body {
   color: white;
 }
 
+
 /* EVENT SECTION */
 
 
 /* REGISTRATION SECTION */
+
+
 #registration-section h2{
   font-family: valorax;
   text-transform: uppercase;
@@ -193,7 +200,7 @@ body {
   box-shadow: 1px 0.1px 15px #986ef8, 1px 0.1px 10px #010118;
   color: #010118;
   text-transform: lowercase;
-  font-size: clamp(0.2rem, 5vw, 0.9rem);
+  font-size: 2vw;
 }
 
 #guidelines-section #guide-btn:hover {
@@ -282,6 +289,7 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
   gap: 5px;
+  overflow-x: hidden;
 }
 
 #contact-section div {
@@ -317,3 +325,58 @@ body {
   display: flex;
   flex-direction: row;
 } */
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  /*Guidelines Button*/
+  #guidelines-section #guide-btn {
+    background: white;
+    box-shadow: 1px 0.1px 15px #986ef8, 1px 0.1px 10px #010118;
+    color: #010118;
+    text-transform: lowercase;
+    font-size: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .reg-heading{
+    margin-top: 10vh;
+      margin-bottom: 10vh;
+  }
+
+  #registration-section h2{
+    font-size: 8vw;
+  }
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ /* @media only screen and (min-width: 600px) {...} */
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ /* @media only screen and (min-width: 768px) {...} */
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+  .nav-item{
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+  }
+
+  #guidelines-section {
+    margin-top: 13vh;
+    margin-bottom: 13vh;
+  }
+
+  
+.reg-heading{
+  margin-top: 18vh;
+    margin-bottom: 10vh;
+}
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+  .nav-item{
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+ } 
