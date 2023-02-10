@@ -177,7 +177,7 @@ body {
 
 #registration-section .card-footer .reg-btn {
   background: #986ef8;
-  box-shadow: 1px 0.1px 5px white;
+  box-shadow: 0.5px 0.1px 5px white !important;
   font-family: valorax;
   text-transform: lowercase;
   letter-spacing: 1.5px;
@@ -290,6 +290,7 @@ body {
   gap: 5px;
   overflow-x: hidden;
   width: 100%;
+  padding: 1rem 2rem;
 }
 
 #contact-section div {

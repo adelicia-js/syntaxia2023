@@ -220,7 +220,7 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
-  text-shadow: 1px 0.1px 5px #986ef8, 0 0 0.2em #010118;
+  text-shadow: 1px 1px 5px #986ef8, 0 0 1px #010118;
   white-space: nowrap;
   text-align: center;
 }
@@ -285,6 +285,6 @@ img {
 
 #events-section .modal-footer .btn:hover {
   background:#986ef8;
-  color: #010118;
+  color: #ffffff;
   box-shadow: 1px 0.1px 7px white !important;
 }
