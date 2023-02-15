@@ -146,7 +146,7 @@ img {
 }
 
 .timeline-section .event-heading {
-  text-shadow: 1px 1px 5px #170247, 0 0 0.2em #986ef8, 0 0 0.2em #8336ba;
+  text-shadow: 1px 1px 15px #170247, 0 0 0.2em #986ef8, 0 0 0.2em #8336ba;
   font-size: clamp(0.5rem, 5vw, 1.7rem);
   letter-spacing: 2px;
   /* white-space: nowrap; */
@@ -216,7 +216,7 @@ img {
 
 .modal-header h5 {
   font-family: valorax;
-  font-size: clamp(0.2rem, 5vw, 1.5rem);
+  font-size: clamp(0.5rem, 9vw, 1.7rem);
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
@@ -231,7 +231,7 @@ img {
 }
 
 .modal-body h6 {
-  font-size: clamp(0.2rem, 5vw, 1.5rem);
+  font-size: clamp(0.4rem, 7vw, 1.6rem);
   text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
   letter-spacing: 1.5px;
   font-family: "VT323", monospace;
@@ -241,7 +241,7 @@ img {
 }
 
 .modal-body p {
-  font-size: clamp(0.2rem, 5vw, 1.3rem);
+  font-size: clamp(0.3rem, 5vw, 1.4rem);
   text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
   letter-spacing: 1.5px;
   font-family: "VT323", monospace;
@@ -251,7 +251,7 @@ img {
 }
 
 .modal-body ol li {
-  font-size: clamp(0.2rem, 5vw, 1.3rem);
+  font-size: clamp(0.3rem, 5vw, 1.4rem);
   text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
   letter-spacing: 1.5px;
   font-family: "VT323", monospace;
@@ -262,7 +262,7 @@ img {
   list-style-type: none;
   padding-left: 0;
   /* text-align: center; */
-  font-size: clamp(0.2rem, 5vw, 1.4rem);
+  font-size: clamp(0.3rem, 5vw, 1.4rem);
   text-shadow: 1px 1px 5px #010118, 0 0 0.2em #986ef8;
   letter-spacing: 1.5px;
   font-family: "VT323", monospace;

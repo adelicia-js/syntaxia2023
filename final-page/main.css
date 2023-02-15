@@ -17,10 +17,10 @@ html, body{
 }
 
 body {
-  
   background-image: url("bg-img.jpg");
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 #overlay {
@@ -49,11 +49,9 @@ body {
   color: rgb(255, 255, 255);
 }
 
-/* MDB */
 /* Color of the links AFTER scroll */
 .navbar-after-scroll .nav-link,
 .navbar-after-scroll .navbar-toggler-icon {
-  /* color: #4f4f4f; */
   color: #ffffff;
 }
 /* Color of the navbar AFTER scroll */
@@ -86,7 +84,6 @@ body {
 
 .nav-link:hover {
   text-shadow: 1px 1px 7px #986ef8, 0 0 0.3em #986ef8, 0 0 0.2em #986ef8;
-  /* text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986EF8, 0 0 0.5em #8336BA; */
 }
 
 /* HOME SECTION */
@@ -102,7 +99,6 @@ body {
   font-family: valorax;
   text-transform: uppercase;
   text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986ef8, 0 0 0.5em #8336ba;
-  /* text-shadow: 1px 1px 5px grey, 0 0 0.3em white, 0 0 0.2em grey; */
   overflow-x: hidden;
 }
 
@@ -312,18 +308,6 @@ body {
   object-fit: contain;
 }
 
-/* #contact-logo-box #sju-box {
-  justify-content: center;
-  margin-top: -1rem;
-  padding: 1rem;
-} */
-
-/* #contact-section #sju-logo {
-  width: clamp(1rem, 12vw, 6rem);
-  height: auto;
-  object-fit: contain;
-} */
-
 #nav-box ul {
   display: flex;
   flex-direction: row;
@@ -361,7 +345,6 @@ body {
   font-size: clamp(0.1rem, 5vw, 1rem); 
   padding-right: 1rem; 
   text-shadow: 1px 1px 5px #010118, 0 0 0.3em #ffffff;
-
 }
 
 #contact-box ul .fa-envelope, #contact-box ul .fa-phone {
