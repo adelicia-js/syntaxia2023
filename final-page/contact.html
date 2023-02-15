@@ -34,7 +34,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="contact.css" />
-    
+
     <!-- Custom styles -->
     <style></style>
     <script src="timeline.js"></script>
@@ -66,17 +66,24 @@
             </button>
 
             <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarSupportedContent"
+            >
               <!-- Left links -->
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" href="syntaxia2023.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="syntaxia2023.html#events-section">Events</a>
+                  <a class="nav-link" href="syntaxia2023.html#events-section"
+                    >Events</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="syntaxia2023.html#registration-section"
+                  <a
+                    class="nav-link"
+                    href="syntaxia2023.html#registration-section"
                     >Registration</a
                   >
                 </li>
@@ -97,77 +104,63 @@
       </header>
 
       <main>
-        <!--Faculty Coordinator-->
+      
         <div class="contactHead w-auto d-flex justify-content-center">
-          <p>Contact Us</p>
-      </div>
+          <h1>Contact Us</h1>
+        </div>
         <!--Faculty Coordinator-->
         <div class="facCoorHead w-auto d-flex justify-content-center">
-            <p>Faculty Coordinator</p>
+          <h2>Faculty Coordinator</h2>
         </div>
 
-        <!--Cards-->
-        <div class="con-cards-outer">
-        <div class="conCarsSec">
-        <ul class="con-cards">
-          <li class="con-cards_item">
-            <div class="con-card">
-              <div class="con-card_image"><img src="https://picsum.photos/500/300/?image=10" class="con-img"></div>
-              <div class="con-card_content">
-                <h2 class="con-card_title">Dr. B G PRASANTHI</h2>
-                <h3 class="con-card_position">Assistant Professor</h2>
-                <ul class="con-card-info">
-                    <li><i class="fa-solid fa-phone"></i>1234567890</li>
-                    <li><i class="fa-solid fa-envelope"></i>prasanthi.b.g@sjc.ac.in</li>
-                </ul>
-              </div>
+        <section id="faculty-section">
+          <div class="card" id="faculty-card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Dr B G Prasanti</h5>
+              <h6 class="card-subtitle mb-2">Assistant Professor</h6>
+              <ul class="card-text">
+                <li><i class="fa fa-phone me-3"></i>+91 99017 35735</li>
+                <li><i class="fa fa-envelope me-3"></i>prasanthi.b.g@sjc.ac.in</li>
+              </ul>
             </div>
-          </li>
-        </ul>
-        </div>
-        </div>
+          </div>
+        </section>
         <!--End of Faculty Coordinator-->
+
         <!--Event coordinators-->
         <div class="evCoorHead w-auto d-flex justify-content-center">
-              <p>Event Coordinators</p>
-          </div>
+          <h2>Event Coordinators</h2>
+        </div>
 
-          <!--Cards-->
-          <div class="con-cards-outer">
-          <div class="conCarsSec">
-          <ul class="con-cards">
-            <li class="con-cards_item">
-              <div class="con-card">
-                <div class="con-card_image"><img src="https://picsum.photos/500/300/?image=10" class="con-img"></div>
-                <div class="con-card_content">
-                  <h2 class="con-card_title">Card Grid Layout</h2>
-                  <p class="con-card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                  <button class="con-btn con-card_btn">Read More</button>
-                </div>
-              </div>
-            </li>
-            <li class="con-cards_item">
-                <div class="con-card">
-                  <div class="con-card_image"><img src="https://picsum.photos/500/300/?image=10" class="con-img"></div>
-                  <div class="con-card_content">
-                    <h2 class="con-card_title">Card Grid Layout</h2>
-                    <p class="con-card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                    <button class="con-btn con-card_btn">Read More</button>
-                  </div>
-                </div>
-              </li>
-          </ul>
+        <section id="core-section">
+          <div class="core-card card" id="faculty-card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Aswin</h5>
+              <h6 class="card-subtitle mb-2">Core Committee</h6>
+              <ul class="card-text">
+                <li><i class="fa fa-phone me-3"></i>+91 99613 25123</li>
+              </ul>
+            </div>
           </div>
+          <div class="core-card card" id="faculty-card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Shashank</h5>
+              <h6 class="card-subtitle mb-2">Core Committee</h6>
+              <ul class="card-text">
+                <li><i class="fa fa-phone me-3"></i>+91 72594 30938</li>
+              </ul>
+            </div>
           </div>
+        </section>
         <!--End of Event Coordinators-->
 
         <!--Event Heads-->
         <div class="eventHead w-auto d-flex justify-content-center">
-            <p>Event Heads</p>
+          <h2>Event Heads</h2>
         </div>
         <div class="accordionContainer row">
           <div class="col-lg-4"></div>
-        <div class="accordion col-lg-4" id="accordionExample">
+          <div class="accordion col-lg-4">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button
@@ -178,10 +171,15 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                Project Prodigy 
+                  Project Prodigy
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-mdb-parent="#accordionExample"
+              >
                 <div class="accordion-body">
                   <p>Abdul (+91 92078 06803)</p>
                 </div>
@@ -197,10 +195,15 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                WereWolves Within
+                  Bounty Busters
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-mdb-parent="#accordionExample"
+              >
                 <div class="accordion-body">
                   <p>Loga</p>
                   <p>Kaif</p>
@@ -217,10 +220,15 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                BrainWave Byte
+                  BrainWave Byte
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#accordionExample">
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-mdb-parent="#accordionExample"
+              >
                 <div class="accordion-body">
                   <p>Pooja A</p>
                   <p>Suhana Nayak B</p>
@@ -228,128 +236,185 @@
               </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
                   TopNotch Design
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-mdb-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Celesta</p>
-                    <p>Alan</p>
-                  </div>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-mdb-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>Celesta</p>
+                  <p>Alan</p>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
                   Code Wars
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-mdb-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Bhagat Singh</p>
-                    <p>Nischith</p>
-                  </div>
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-mdb-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>Bhagat Singh</p>
+                  <p>Nischith</p>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
                   Visionary Voice
-                  </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-mdb-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Deepshika</p>
-                    <p>Ujjwal</p>
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSix"
+                data-mdb-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>Deepshika</p>
+                  <p>Ujjwal</p>
                 </div>
               </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSeven">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#collapseSeven"
-                    aria-expanded="false"
-                    aria-controls="collapseSeven"
-                  >
-                    Tech-Tangle
-                  </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-mdb-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Payal</p>
-                  </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  Tech Tangle
+                </button>
+              </h2>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSeven"
+                data-mdb-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>Payal</p>
                 </div>
               </div>
+            </div>
           </div>
           <div class="col-lg-4"></div>
+          
         </div>
         <!--End of Event Heads-->
       </main>
-      <!--Footer-->
+      <!-- Footer -->
       <footer id="contact-section" class="text-center text-lg-start bg-light">
         <div id="logo-box">
-          <img src="technophite.png" alt="" id="syntaxia-logo" />
+          <img src="syntaxia.png" alt="" id="syntaxia-logo" />
         </div>
         <div id="nav-box">
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Events</li>
-            <li>Guidelines</li>
-            <li>Registration</li>
-            <li>Brochure</li>
+            <li><a href="#home-section" class="nav-link">Home</a></li>
+            <li><a href="contact.html" class="nav-link">About Us</a></li>
+            <li><a href="#events-section" class="nav-link">Events</a></li>
+            <li>
+              <a href="#guidelines-section" class="nav-link">Guidelines</a>
+            </li>
+            <li>
+              <a href="#registration-section" class="nav-link">Registration</a>
+            </li>
+            <li><a href="" class="nav-link">Brochure</a></li>
           </ul>
         </div>
         <div id="contact-box">
           <ul>
             <li>
-              <i class="fa-solid fa-location-dot me-3"></i>Address, at Address,
-              Address
+              <a href="https://goo.gl/maps/7jA2SVEqdRg2J62N8" target="_blank"
+                ><i class="fa-solid fa-location-dot me-3"></i>36, Lalbagh Road, Bengaluru, Karnataka</a
+              >
             </li>
             <li>
-              <i class="fa-solid fa-envelope me-3"></i>technophite@gmail.com
+              <a href="mailto:technophite.sju@gmail.com" target="_blank"
+                ><i class="fa-solid fa-envelope me-3"></i
+                >technophite.sju@gmail.com</a
+              >
             </li>
-            <li><i class="fa-solid fa-phone me-3"></i>+91 74673 43871</li>
-            <li><i class="fa-brands fa-instagram me-3"></i>technophite</li>
+            <li>
+              <a href="tel:+91 99017 35735"
+                ><i class="fa-solid fa-phone me-3"></i>+91 99017 35735</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/technophite_sjc/" target="_blank"
+                ><i class="fa-brands fa-instagram me-3"></i>technophite_sjc</a
+              >
+            </li>
           </ul>
         </div>
 
         <!-- Copyright -->
-        <div class="text-center p-2" id="copyright">
-          © 2023 Copyright
-          <a class="text-reset fw-bold" href="">Technophite</a>
+        <div class="text-left" id="copyright-section">
+          <p>
+            © 2023 Copyright
+            <a
+              class="text-reset fw-bold"
+              href="https://www.instagram.com/technophite_sjc/"
+              >Technophite</a
+            >
+            | Built By :
+            <a
+              href="https://github.com/adelicia-js"
+              target="_blank"
+              class="text-reset fw-bold special"
+              >Adelicia Sequeira</a
+            >
+            and
+            <a
+              href="https://github.com/programmingMohit"
+              target="_blank"
+              class="text-reset fw-bold special"
+              >Mohit Chakraborty</a
+            >
+          </p>
         </div>
         <!-- Copyright -->
       </footer>
-
+      <!-- Footer -->
     <!-- </div> -->
-
+    
     <!-- MDB -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"

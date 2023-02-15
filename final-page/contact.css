@@ -9,17 +9,17 @@
   src: url("Valorax-lg25V.otf");
 }
 
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
- 
 }
 
 body {
-  
-  background: linear-gradient(45deg,#190153, 20%, #00001b);
+  /* background: linear-gradient(45deg,#190153, 20%, #00001b); */
+  background-image: url(contact-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden;
@@ -32,7 +32,7 @@ body {
 /* NAVIGATION BAR */
 .navbar {
   font-family: valorax;
-  text-shadow: 1px 1px 5px #170247, 0 0 0.25em #986ef8;
+  text-shadow: 1px 1px 5px #123636, 0 0 0.25em #0e8782;
 }
 
 .nav-link {
@@ -54,7 +54,7 @@ body {
 }
 /* Color of the navbar AFTER scroll */
 .navbar-after-scroll {
-  background-color: #010118;
+  background-color: #0a4040;
 }
 
 /* Transition after scrolling */
@@ -70,7 +70,7 @@ body {
 /* Navbar on mobile */
 @media (max-width: 991.98px) {
   #main-navbar {
-    background-color: #010118;
+    background-color: #0a4040;
   }
 
   .nav-link,
@@ -81,185 +81,163 @@ body {
 }
 
 .nav-link:hover {
-  text-shadow: 1px 1px 7px #986ef8, 0 0 0.3em #986ef8, 0 0 0.2em #986ef8;
+  text-shadow: 1px 1px 7px #0e8782, 0 0 0.3em #0e8782, 0 0 0.2em #0e8782;
   /* text-shadow: 1px 1px 5px #170247, 0 0 0.5em #986EF8, 0 0 0.5em #8336BA; */
 }
 
-.evCoorHead, .eventHead{
-    margin-top: 2vh;
-    font-family: valorax;
-    color: white;
-    font-size: 3vw;
+/* MAIN */
+
+main {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.facCoorHead, .contactHead{
-    
-    font-family: valorax;
-    color: white;
-}
-
-.facCoorHead{
-  font-size: 3vw;
-  margin-top: 8vh;
-}
-
-.contactHead{
+/* CONTACT HEADING */
+.contactHead {
   margin-top: 20vh;
   font-size: 4vw;
 }
 
+.contactHead h1 {
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 8vw, 4.5rem);
+  letter-spacing: 3px;
+}
 
-.con-img {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-  }
-  
-  .con-btn {
-    color: #ffffff;
-    padding: 0.8rem;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    font-weight: 400;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: transparent;
-  }
-  
-  .con-btn:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-  }
-  
-  .con-cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-  }
-  
-  .con-cards_item {
-    display: flex;
-    padding: 1rem;
-  }
-  
-  @media (min-width: 40rem) {
-    .con-cards_item {
-      width: 50%;
-    }
-  }
-  
-  @media (min-width: 56rem) {
-    .con-cards_item {
-      width: 33.3333%;
-    }
-  }
-  
-  .con-card {
-    background-color: white;
-    border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-  
-  .con-card_content {
-    padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
-  }
-  
-  .con-card_title {
-    color: #ffffff;
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    margin: 0px;
-    text-align: center;
-    
-  }
-  
-  .con-card_info {
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;    
-    font-weight: 400;
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+/* FACULTY HEADING */
 
-  .con-card_info .fa-phone, .con-card_info .fa-envelope{
-    margin: 0 0.5vw;
-  }
+.facCoorHead {
+  font-size: 3vw;
+  margin-top: 2vh;
+}
 
-  .conCardsSec{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.facCoorHead h2, .evCoorHead h2, .eventHead h2{
+  font-size: clamp(0.4rem, 5vw, 3rem);
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
 
-  .con-cards-outer{
-    padding: 1vw 15vw;
-  }
+.facCoorHead,
+.contactHead, .evCoorHead, .eventHead {
+  font-family: valorax;
+  color: white;
+  text-shadow: 1px 1px 5px #123636, 0 0 0.1em #0e8782, 0 0 0.1em #09f8f0;
+}
 
-  .accordionContainer{
-    padding: 5vh 20vw;
-  }
+.evCoorHead,
+.eventHead {
+  font-family: valorax;
+  color: white;
+  font-size: 3vw;
+}
 
-  @media only screen and (max-width: 600px) {
+/* CARDS */
+#faculty-section, #core-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    .contactHead{
-      font-size: 10vw;
-    }
-    .evCoorHead, .eventHead, .facCoorHead{
-        font-size: 7vw;
-        text-align: center;
-    }
+#core-section {
+  gap: 8px;
+}
+
+#faculty-card ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card {
+  background: linear-gradient(60deg, #09f8f0 30%, #0e8782 70%, #09f8f0 100%);
+  color: #0a4040;
+  font-family: 'VT323', monospace;
+}
+
+.card-body h5 {
+  font-size: clamp(0.3rem, 5vw, 1.5rem);
+}
+
+.card-body h6 {
+  font-size: clamp(0.3rem, 4vw, 1.3rem);
+}
+
+.card-body ul li{
+  font-size: clamp(0.2rem, 3vw, 1.2rem);
+}
+
+.card-body i {
+  font-size: clamp(0.15rem, 2vw, 1rem);
+}
+
+/* EVENT HEADS (ACCORDION) SECTION */
+
+.accordionContainer {
+  padding: 0 20vw 5vh 20vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactHead {
+    font-size: 10vw;
   }
-  
-  .con-card_position{
-    color: #ffffff;
-    font-size: 0.8em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    margin: 1vh;
+  .evCoorHead,
+  .eventHead,
+  .facCoorHead {
+    font-size: 7vw;
     text-align: center;
   }
+}
 
-  .accordion-item, .accordion-button{
-    background-color: transparent !important;
-  }
+.accordion-item,
+.accordion-button {
+  background-color: transparent !important;
+}
 
-  .accordion-item{
-    color: lightblue;
-  }
+.accordion-item {
+  color: lightblue;
+  font-family: 'VT323', monospace;
+}
 
-  .accordion-button{
-    color: white;
-  }
+.accordion-item .accordion-button {
+  font-size: clamp(0.4rem, 5vw, 1.4rem);
+}
 
-  .accordion-button:not(.collapsed){
-    color: white;
-    font-weight: bold;
-  }
+.accordion-button {
+  color: white;
+}
 
-  /* CONTACT SECTION */
+.accordion-button:hover {
+  color: white;
+  text-shadow: 1px 1px 7px #0e8782, 0 0 0.5em #0e8782, 0 0 0.5em #0e8782;   
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  text-shadow: 1px 1px 7px #0e8782, 0 0 0.3em #0e8782, 0 0 0.2em #0e8782;   
+  /* font-weight: bold */
+}
+
+.accordion-body {
+  font-size: clamp(0.2rem, 4vw, 1.2rem);
+  color:#09f8f0;
+  text-shadow: 1px 1px 7px #0a4040;
+}
+
+/* CONTACT SECTION */
 #contact-section {
-  background: #010118b6 !important;
+  background: #0a4040a8 !important;
   color: white;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
   gap: 5px;
   overflow-x: hidden;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 #contact-section div {
@@ -276,7 +254,7 @@ body {
 }
 
 #logo-box #syntaxia-logo {
-  width: clamp(3rem, 7vw, 6rem);
+  width: clamp(5rem, 25vw, 18rem);
   height: auto;
   object-fit: contain;
 }
@@ -284,36 +262,109 @@ body {
 #nav-box ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+}
+
+#nav-box .nav-link {
+  font-size: clamp(0.4rem, 5vw, 1.4rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px #123636, 0 0 0.2em #0e8782;
+}
+#nav-box .nav-link:hover {
+  text-shadow: 1px 1px 7px #0e8782, 0 0 0.3em #0e8782, 0 0 0.2em #0e8782;
 }
 
 #contact-box ul {
   font-family: "VT323", monospace !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
+#contact-box ul li {
+  font-size: clamp(0.2rem, 5vw, 1.2rem);
+  color: white;
+  text-shadow: 1px 1px 5px #123636, 0 0 0.2em #0e8782;
+}
 
-   /* Small devices (portrait tablets and large phones, 600px and up) */
- /* @media only screen and (min-width: 600px) {...} */
- 
- /* Medium devices (landscape tablets, 768px and up) */
- /* @media only screen and (min-width: 768px) {...} */
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-  .nav-item{
+#contact-box ul i {
+  font-size: clamp(0.1rem, 5vw, 1rem);
+  padding-right: 1rem;
+  text-shadow: 1px 1px 5px #123636, 0 0 0.3em #0e8782;
+}
+
+#contact-box ul .fa-envelope,
+#contact-box ul .fa-phone {
+  padding-right: 0.8rem;
+}
+
+#contact-box ul a {
+  text-decoration: none;
+  color: white;
+}
+
+#contact-box ul a:hover {
+  text-shadow: 1px 0.1px 5px #ffffff, 0 0 0.2em #0e8782;
+}
+
+#contact-box ul i:hover {
+  text-shadow: 1px 0.1px 15px #123636, 1px 0.1px 20px #ffffff, 0 0 0.3em #123636;
+}
+
+#copyright-section {
+  font-size: clamp(0.2rem, 5vw, 1rem);
+  margin-bottom: 0;
+}
+
+#copyright-section p {
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+#copyright-section a {
+  text-shadow: 1px 0.1px 5px #123636;
+}
+#copyright-section a:hover {
+  text-shadow: 1px 0.1px 15px #123636, 1px 0.1px 5px #ffffff;
+}
+
+#copyright-section .special {
+  color: #09f8f0 !important;
+  text-shadow: 1px 0.1px 5px #123636, 1px 0.1px 3px #0e8782;
+  font-size: clamp(0.25rem, 5vw, 1.1rem);
+}
+
+#copyright-section .special:hover {
+  text-shadow: 1px 0.1px 1px #123636, 1px 0.1px 1em #0e8782, 0 0 0.3em #09f8f0;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-item {
     margin-left: 1.5vw;
     margin-right: 1.5vw;
   }
 
-  .accordion{
+  .accordion {
     max-width: 20vw;
   }
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-  .nav-item{
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .nav-item {
     margin-left: 3vw;
     margin-right: 3vw;
   }
- }
+}
