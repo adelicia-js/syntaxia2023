@@ -295,7 +295,7 @@ main {
 #contact-box ul i {
   font-size: clamp(0.1rem, 5vw, 1rem);
   padding-right: 1rem;
-  text-shadow: 1px 1px 5px #123636, 0 0 0.3em #0e8782;
+  text-shadow: 1px 1px 5px #123636, 0 0 0.3em #ffffff;
 }
 
 #contact-box ul .fa-envelope,
@@ -313,7 +313,7 @@ main {
 }
 
 #contact-box ul i:hover {
-  text-shadow: 1px 0.1px 15px #123636, 1px 0.1px 20px #ffffff, 0 0 0.3em #123636;
+  text-shadow: 1px 0.1px 15px #010118, 1px 0.1px 20px #ffffff, 0 0 0.3em #010118;
 }
 
 #copyright-section {
