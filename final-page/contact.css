@@ -19,7 +19,7 @@ body {
 
 body {
   /* background: linear-gradient(45deg,#190153, 20%, #00001b); */
-  background-image: url(contact-bg.jpg);
+  background-image: url("static/images/contact-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden;
