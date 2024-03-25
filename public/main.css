@@ -19,7 +19,7 @@ html, body{
 }
 
 body {
-  background-image: url("static/images/bg-img.jpg");
+  background-image: url("static/images/bg-img.webp");
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden;
