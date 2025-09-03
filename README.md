@@ -2,6 +2,8 @@
 
 A static website for Syntaxia 2023, a programming competition and tech fest organized by Technophite. The website features event information, registration details, schedules, and contact information for both undergraduate (Cybernetics Syntaxia) and postgraduate (Technophite Syntaxia) competitions.
 
+<image src="public/static/images/app_screenshot.png" width="85%" height="85%">
+
 ## 🚀 Features
 
 - **Multi-day Event Schedule**: Interactive timeline showcasing Day 1 and Day 2 events
